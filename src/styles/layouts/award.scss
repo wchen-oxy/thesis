@@ -1,0 +1,17 @@
+.award {
+    @include flex-display-column;
+    align-items: center;
+    width: 384px;
+    color: white;
+    text-align: center;
+    margin-top:16px;
+    margin-bottom: 16px;
+    h3{
+        width: 384px;
+        margin-top: 8px;
+    }
+    img {
+        height: 128px;
+        object-fit: contain;
+    }
+}

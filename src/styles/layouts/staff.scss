@@ -1,0 +1,20 @@
+#staff {
+    @include flex-display-column;
+    height: 1024px;
+    align-items: center;
+    h1 {
+        color: $general-font-color;
+        margin-bottom: 48px;
+    }
+
+    h3 {
+        margin-top: 24px;
+    }
+}
+
+#staff-list {
+    @include flex-display-row;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,16 @@
+#awards{
+    @include flex-display-column;
+    height: 1024px;
+    justify-content: center;
+    h1{
+        color: white;
+        margin: 48px 32px;
+        text-align: center;
+    }
+}
+
+#awards-list {
+    @include flex-display-row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

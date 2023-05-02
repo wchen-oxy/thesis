@@ -1,0 +1,10 @@
+.person {
+    @include flex-display-column;
+    align-items: center;
+    margin: 16px;
+
+    h3,
+    h4 {
+        color:$general-font-color;
+    }
+}
