@@ -1,11 +1,17 @@
 import React from 'react';
+import logo from '../../public/static/v2.png';
 
 const Navbar = (props) => {
     return (
         <header>
-
-            <button id='logo' onClick={() => props.scrollTo(props.welcomeRef, 1)}>Thesis</button>
-
+            <div id='nav-logo-container'>
+                <img src={logo} />
+                <button
+                    id='logo'
+                    onClick={() => props.scrollTo(props.welcomeRef, 0)}>
+                    Thesis
+                </button>
+            </div>
             <nav>
                 <button onClick={() => props.scrollTo(props.scheduleRef, -200)}>Schedule</button>
                 {/* <button onClick={() => scrollTo(scheduleRef, true)}>Gallery</button> */}

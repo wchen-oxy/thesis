@@ -1,15 +1,53 @@
-import React from 'react';
-import cover from '../../public/static/bw.jpg';
+import React, { useRef } from 'react';
+import cover from '../../public/static/newbackground-v.png';
+import body from '../../public/static/body.png';
+import arm from '../../public/static/arm.png';
+
 
 const Welcome = (props) => {
+    const armRef = useRef(null);
+    const bodyRef = useRef(null);
+
+    const move = (id) => {
+        const windowY = window.pageYOffset;
+        const elementPosition = armRef.current.getBoundingClientRect().top;
+        const diff = 0.5 * (windowY / -10);
+        const diffOffset = diff + 15;
+
+        let armStyle = armRef.current.style;
+        const stringedRotate = 'rotate(' + (diffOffset).toString() + 'deg)';
+
+        console.log(armStyle.transform);
+        if (windowY < 1) {
+            armStyle.transform = 'rotate(15deg)';
+        }
+
+        else if (windowY < 300) {
+            armStyle.transform = stringedRotate;
+        }
+        else {
+            return;
+        }
+
+    }
+    document.addEventListener('scroll', move);
+
+
+
     return (
-        <div  id='welcome'>
-            <div id='welcome-text' ref={props.reference}>
+        <div id='welcome' ref={props.reference}>
+            <div id='welcome-text'>
                 <h1>THESIS PERCUSSION</h1>
                 <p>Statement To Be Made</p>
             </div>
-            <div id='welcome-image-container'>
-                <img alt='cover goes here' src={cover} />
+            <div id='background-container'>
+                <img id='background' alt='cover goes here' src={cover} />
+            </div>
+            <div className='foo loading' id='arm-container' ref={armRef}>
+                <img className='welcome-image' id='arm' src={arm} />
+            </div>
+            <div className='loading' id='body-container' ref={bodyRef} >
+                <img className='welcome-image' id='body' src={body} />
             </div>
 
         </div>

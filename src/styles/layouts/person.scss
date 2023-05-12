@@ -1,10 +1,19 @@
 .person {
     @include flex-display-column;
     align-items: center;
-    margin: 16px;
+
+    h3 {
+        margin-top: 24px;
+        font-weight: 200;
+    }
+
+    h4 {
+        font-weight: 300;
+        font-size: 32px;
+    }
 
     h3,
     h4 {
-        color:$general-font-color;
+        color: $general-font-color;
     }
 }

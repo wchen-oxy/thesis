@@ -1,3 +1,9 @@
 @import "./abstracts/__abstracts-dir.scss";
 @import "./base/__base-dir.scss";
 @import "./layouts/__layouts-dir.scss";
+
+#staff-title{
+    color: $general-font-color;
+    margin-bottom: 4px;
+    text-align: center;
+}

@@ -5,7 +5,7 @@ const Schedule = props => {
     return (
         <div id='schedule' >
             <h1 ref={props.reference}>2024 Schedule</h1>
-            <h5>To Be Announced</h5>
+            <h2>To Be Announced</h2>
         </div>
     );
 }

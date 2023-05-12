@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Person = (props) => {
-
     return (
         <div className='person'>
             <img src={props.image} />

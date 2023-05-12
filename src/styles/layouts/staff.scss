@@ -1,20 +1,47 @@
-#staff {
+.staff {
     @include flex-display-column;
-    height: 1024px;
-    align-items: center;
-    h1 {
+    padding-bottom: 10%;
+    justify-content: center;
+
+    h2 {
         color: $general-font-color;
         margin-bottom: 48px;
-    }
-
-    h3 {
-        margin-top: 24px;
+        text-align: center;
     }
 }
 
-#staff-list {
-    @include flex-display-row;
-    width: 100%;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.staff-list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+    grid-row-gap: 48px;
 }
+
+// @media all and (max-width: 839px) and (min-width: 630px) {
+//     .staff-list {
+//         grid-template-columns: 50% 50%;
+//         color: blue;
+//     }
+
+// }
+
+// @media all and (max-width: 1200px) and (min-width: 840px) {
+//     .staff-list {
+//         grid-template-columns: 33.33% 33.33% 33.33%;
+//         color: blue;
+//     }
+// }
+
+// @media all and (max-width: 1500px) and (min-width: 1201px) {
+//     .staff-list {
+//         grid-template-columns: 25% 25% 25% 25%;
+//         color: blue;
+//     }
+// }
+
+// @media all and (max-width: 1800px) and (min-width: 1501px) {
+//     .staff-list {
+//         grid-template-columns: 20% 20% 20% 20% 20%;
+//         color: blue;
+//     }
+// }
