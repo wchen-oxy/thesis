@@ -8,6 +8,7 @@
     @include flex-display-row;
     align-items: center;
     font-size: 32px;
+    font-weight: 600;
     background-color: transparent;
 }
 
@@ -35,14 +36,14 @@ button {
     border-style: none;
 }
 
-button:hover {
+span:hover {
     cursor: pointer;
 }
 
 nav {
     @include flex-display-row;
     margin-right: 0;
-
+     
     a {
         @include flex-display-row;
         text-decoration: none;
@@ -59,8 +60,12 @@ nav {
 
 }
 
-
 span,
 button {
     color: $nav-font-color;
+}
+
+span{
+    font-size: 18px;
+    margin: auto;
 }

@@ -2,8 +2,30 @@
 @import "./base/__base-dir.scss";
 @import "./layouts/__layouts-dir.scss";
 
-#staff-title{
-    color: $general-font-color;
-    margin-bottom: 4px;
+#bcp {
+  img {
+   
+   
+    width: 100%;
+  }
+  h4{
+    color: white;
     text-align: center;
+  }
+  margin-bottom: 500px;
+}
+
+#staff-title {
+  color: $general-font-color;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+#footer{
+    margin-top: 250px;
+    margin-bottom: 50px;
+    text-align: center;
+    p {
+        color: white;
+    }
 }

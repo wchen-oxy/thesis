@@ -1,11 +1,15 @@
 #awards{
     @include flex-display-column;
     height: 1024px;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
     justify-content: center;
     h1{
         color: white;
         margin: 48px 32px;
         text-align: center;
+        font-weight: 800;
+        font-size: 64px;
     }
     h3{
         font-size: 20px;

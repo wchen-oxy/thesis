@@ -1,86 +1,138 @@
 #welcome {
-    width: 100%;
-    position: relative;
+  height: 100vh;
+  width: 100%;
+  position: relative;
 }
 
 #welcome-text {
-    position: absolute;
-    top: 50vh;
-    text-align: center;
-    width: fit-content;
-    padding-left: 48px;
-    z-index: 3;
+  position: absolute;
+  top: 40vh;
+  text-align: center;
+  width: fit-content;
+  z-index: 3;
 
-    h1 {
-        font-weight: 800;
-        font-size: 64px;
-    }
+  h1 {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 1;
+  }
 
-    h1,
-    p {
-        color: white;
-    }
+  h1,
+  p {
+    color: white;
+  }
 }
 
 #background-container {
-    
-    width: 100%;
-    position: relative;
-    z-index: 2;
+  width: 100%;
+  position: relative;
+  z-index: 2;
 
-    img {
-        z-index: 1;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        opacity: 0.8;
-        overflow-x: hidden;
-    }
+  img {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    overflow-x: hidden;
+  }
 }
 
 #arm-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    transform-origin: 75% 50%;
-    transform: rotate(15deg);
-
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  transform-origin: 75% 50%;
+  transform: rotate(15deg);
 }
 
 #body-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-
+  position: absolute;
+  top: 0;
+  z-index: 2;
 }
 
-.welcome-image {
+@media only screen and (max-width: 799px) {
+  #welcome-text {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #welcome-text {
+    padding-left: 48px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #arm-container,
+  #body-container {
+    left: -600px;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 701px) {
+  #arm-container,
+  #body-container {
+    left: -400px;
+  }
+}
+
+@media only screen and (max-width: 1299px) and (min-width: 1001px) {
+  #arm-container,
+  #body-container {
+    left: -200px;
+  }
+  #welcome-text {
+    h1 {
+      font-weight: 800;
+      font-size: 100px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #arm-container,
+  #body-container {
+    left: -100px;
+  }
+
+  #welcome-text {
+    h1 {
+      font-weight: 800;
+      font-size: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1299px) {
+  .welcome-image {
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .welcome-image {
     width: 100%;
+  }
 }
 
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .loading {
-    animation-delay: 350ms;
-    animation: fadeInAnimation ease-in 5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
+  animation-delay: 350ms;
+  animation: fadeInAnimation ease-in 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-
-// .foo{
-//     content: '';
-//     background-color: #f0f;
-//     border-radius: 50%;
-//     transform-origin: 90% 90%;
-// }
