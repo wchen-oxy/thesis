@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import cover from "../../public/static/newbackground-v.png";
+import cover from "../../public/static/newbackground-low.jpg";
 import body from "../../public/static/body.png";
 import arm from "../../public/static/arm.png";
 import Title from "./title";
