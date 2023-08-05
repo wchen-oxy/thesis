@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import cover from "../../public/static/newbackground-low.jpg";
 import body from "../../public/static/body.png";
 import arm from "../../public/static/arm.png";
@@ -25,7 +25,11 @@ const Welcome = (props) => {
       return;
     }
   };
-  document.addEventListener("scroll", move);
+
+  useEffect(() =>{
+    document.addEventListener("scroll", move);
+
+  },{})
 
   return (
     <div id="welcome" ref={props.reference}>

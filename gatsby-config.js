@@ -6,6 +6,9 @@ module.exports = {
     title: `thesis`,
     siteUrl: `https://www.yourdomain.tld`,
   },
+  flags: {
+    DEV_SSR: true
+  },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
@@ -34,4 +37,5 @@ module.exports = {
       },
     },
   ],
+  // pathPrefix: "/thesis",
 };
