@@ -7,7 +7,7 @@ import Staff from "../templates/staff";
 import img from "../images/staff-dir";
 import "../styles/index.scss";
 import Footer from "../templates/footer";
-import bcp from "../../public/static/group.jpg";
+import bcp from "../images/resources/group.jpg";
 
 const design = [
   {
@@ -133,13 +133,14 @@ const IndexPage = () => {
         scrollTo={scrollTo}
       />
       <Welcome reference={welcomeRef} />
-      
-      <Awards />
-      <Schedule reference={scheduleRef} />
       <div id="bcp">
         <img src={bcp} />
         <h4>Music to be played</h4>
       </div>
+      
+      <Awards />
+      <Schedule reference={scheduleRef} />
+     
       <h1 id="staff-title" ref={staffRef}>
         Staff
       </h1>

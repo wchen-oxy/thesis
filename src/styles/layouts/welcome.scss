@@ -44,6 +44,10 @@
   z-index: 2;
   transform-origin: 75% 50%;
   transform: rotate(15deg);
+  img {
+    margin-left: 40px;
+    margin-top: -40px;
+  }
 }
 
 #body-container {

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
-import cover from "../../public/static/newbackground-low.jpg";
-import body from "../../public/static/body.png";
-import arm from "../../public/static/arm.png";
+import cover from "../images/resources/newbackground-low.jpg";
+import body from "../images/resources/body.png";
+import arm from "../images/resources/arm.png";
 import Title from "./title";
 
 const Welcome = (props) => {

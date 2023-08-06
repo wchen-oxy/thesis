@@ -1,5 +1,5 @@
 import React from 'react';
-import ncpa from '../../public/static/bwncpa-clear.png';
+import ncpa from '../images/resources/bwncpa-clear.png';
 
 const Award = (props) => {
     return (
