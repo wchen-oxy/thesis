@@ -3,6 +3,7 @@ import cover from "../images/resources/newbackground-low.jpg";
 import body from "../images/resources/body.png";
 import arm from "../images/resources/arm.png";
 import Title from "./title";
+import { withPrefix } from 'gatsby';
 
 const Welcome = (props) => {
   const armRef = useRef(null);
@@ -40,13 +41,13 @@ const Welcome = (props) => {
         <p>Statement To Be Made</p>
       </div>
       <div id="background-container">
-        <img id="background" alt="cover goes here" src={cover} />
+        <img id="background" alt="cover goes here" src={withPrefix(cover)} />
       </div>
       <div className="foo loading" id="arm-container" ref={armRef}>
-        <img className="welcome-image" id="arm" src={arm} />
+        <img className="welcome-image" id="arm" src={withPrefix(arm)} />
       </div>
       <div className="loading" id="body-container" ref={bodyRef}>
-        <img className="welcome-image" id="body" src={body} />
+        <img className="welcome-image" id="body" src={withPrefix(body)} />
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import img from "../images/staff-dir";
 import "../styles/index.scss";
 import Footer from "../templates/footer";
 import bcp from "../images/resources/group.jpg";
+import { withPrefix } from "gatsby";
 
 const design = [
   {
@@ -133,14 +134,20 @@ const IndexPage = () => {
         scrollTo={scrollTo}
       />
       <Welcome reference={welcomeRef} />
-      <div id="bcp">
-        <img src={bcp} />
-        <h4>Music to be played</h4>
+
+      <div id="splash">
+        {/* <h1 id='we'>We Are</h1> */}
+        <h1>The Only World Class Group of the Bay Area</h1>
       </div>
-      
+
+      <div id="bcp">
+        <img src={withPrefix(bcp)} />
+        {/* <h4>Music to be played</h4> */}
+      </div>
+
       <Awards />
       <Schedule reference={scheduleRef} />
-     
+
       <h1 id="staff-title" ref={staffRef}>
         Staff
       </h1>

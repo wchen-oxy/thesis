@@ -1,11 +1,12 @@
 import React from 'react';
 import logo from '../images/resources/v2.png';
+import { withPrefix } from 'gatsby';
 
 const Navbar = (props) => {
     return (
         <header>
             <div id='nav-logo-container'>
-                <img src={logo} />
+                <img src={withPrefix(logo)} />
                 <button
                     id='logo'
                     onClick={() => props.scrollTo(props.welcomeRef, 0)}>

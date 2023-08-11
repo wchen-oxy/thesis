@@ -16,13 +16,15 @@ const Schedule = (props) => {
   return (
     <div id="schedule">
       <h1 ref={props.reference}>2024 Schedule</h1>
-      {data.map((data, index) => (
-        <Events 
-            key={index} 
-            event={data.event} 
-            description={data.description} 
-            />
-      ))}
+      <div id="events">
+        {data.map((data, index) => (
+          <Events
+            key={index}
+            event={data.event}
+            description={data.description}
+          />
+        ))}
+      </div>
     </div>
   );
 };

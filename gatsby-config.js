@@ -4,8 +4,9 @@
 module.exports = {
   siteMetadata: {
     title: `thesis`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://wchen-oxy.github.io/thesis`,
   },
+  pathPrefix: `/thesis`,
   flags: {
     DEV_SSR: true
   },
@@ -16,7 +17,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "../images/resources/v2.png",
+        icon: "./src/images/resources/v2.png",
       },
     },
     "gatsby-plugin-sharp",
