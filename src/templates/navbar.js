@@ -5,7 +5,6 @@ import { slide as Menu } from "react-burger-menu";
 
 const Navbar = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  console.log(menuOpen);
   return (
     <header>
       <div id="nav-logo-container">
