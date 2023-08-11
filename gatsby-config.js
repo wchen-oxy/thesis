@@ -4,9 +4,9 @@
 module.exports = {
   siteMetadata: {
     title: `thesis`,
-    siteUrl: `https://wchen-oxy.github.io/thesis`,
+    siteUrl: `https://wchen-oxy.github.io/`,
   },
-  pathPrefix: `/thesis`,
+  pathPrefix: ``,
   flags: {
     DEV_SSR: true
   },
