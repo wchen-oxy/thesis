@@ -6,7 +6,7 @@ module.exports = {
     title: `thesis`,
     siteUrl: `https://wchen-oxy.github.io/`,
   },
-  pathPrefix: ``,
+  pathPrefix: `/thesis`,
   flags: {
     DEV_SSR: true
   },

@@ -2,6 +2,7 @@
   @include flex-display-row;
   align-items: center;
   margin-left: 16px;
+  cursor: pointer;
 }
 
 #logo {
@@ -10,6 +11,7 @@
   font-size: 32px;
   font-weight: 600;
   background-color: transparent;
+  cursor: pointer;
 }
 
 header {

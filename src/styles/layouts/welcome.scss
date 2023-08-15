@@ -29,9 +29,13 @@
 
 #background-container {
   width: 100%;
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  z-index: 1;
   height: 100vh;
+  background-image: url("../images/resources/newbackground-low.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 
   img {
     z-index: 1;
@@ -149,7 +153,7 @@
 
 .loading {
   animation-delay: 350ms;
-  animation: fadeInAnimation ease-in 5s;
+  animation: fadeInAnimation ease-in 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }

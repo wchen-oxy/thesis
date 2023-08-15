@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import logo from "../images/resources/v2.png";
-import { withPrefix } from "gatsby";
 import { slide as Menu } from "react-burger-menu";
 
 const Navbar = (props) => {
@@ -8,7 +7,7 @@ const Navbar = (props) => {
   return (
     <header>
       <div id="nav-logo-container">
-        <img src={withPrefix(logo)} />
+        <img src={(logo)} />
         <button id="logo" onClick={() => props.scrollTo(props.welcomeRef, 0)}>
           Thesis
         </button>

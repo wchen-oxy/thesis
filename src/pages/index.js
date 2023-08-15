@@ -8,7 +8,8 @@ import img from "../images/staff-dir";
 import "../styles/index.scss";
 import Footer from "../templates/footer";
 import bcp from "../images/resources/group.jpg";
-import { withPrefix } from "gatsby";
+import yell from "../images/resources/yell-crop.png";
+import drum from "../images/resources/drum.png";
 
 const design = [
   {
@@ -116,6 +117,7 @@ const IndexPage = () => {
   const welcomeRef = useRef(null);
 
   const scrollTo = (reference, offset) => {
+    console.log(reference, offset);
     const elementPosition = reference.current.getBoundingClientRect().top;
     const offsetPosition = elementPosition + window.pageYOffset + offset;
     window.scrollTo({
@@ -134,27 +136,36 @@ const IndexPage = () => {
         scrollTo={scrollTo}
       />
       <Welcome reference={welcomeRef} />
+      <div></div>
+      <div id="remainder">
+        <div id="splash">
+          <div id="we">
+            <h1>We</h1>
+            <img src={drum} />
+          </div>
+          <div id="are">
+            <img src={yell} />
+            <h1>Are</h1>
+          </div>
+          <h1>The Premier World Class Division of the Bay Area</h1>
+        </div>
 
-      <div id="splash">
-        {/* <h1 id='we'>We Are</h1> */}
-        <h1>The Only World Class Group of the Bay Area</h1>
+        <div id="bcp">
+          <img src={bcp} />
+          {/* <h4>Music to be played</h4> */}
+        </div>
+
+        <Awards />
+        <Schedule reference={scheduleRef} />
+
+        <h1 id="staff-title" ref={staffRef}>
+          Staff
+        </h1>
+        <Staff title="Design" data={design} />
+        <Staff title="Front" data={front} />
+        <Staff title="Battery" data={battery} />
+        <Footer />
       </div>
-
-      <div id="bcp">
-        <img src={withPrefix(bcp)} />
-        {/* <h4>Music to be played</h4> */}
-      </div>
-
-      <Awards />
-      <Schedule reference={scheduleRef} />
-
-      <h1 id="staff-title" ref={staffRef}>
-        Staff
-      </h1>
-      <Staff title="Design" data={design} />
-      <Staff title="Front" data={front} />
-      <Staff title="Battery" data={battery} />
-      <Footer />
     </main>
   );
 };

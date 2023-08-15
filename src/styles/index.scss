@@ -6,25 +6,58 @@
   img {
     width: 100%;
   }
-  h4{
+  h4 {
     color: white;
     text-align: center;
   }
   // margin-top: 50%;
-  
 }
 
-#splash{
-  margin-top: 500px;
+#splash {
+  padding-top: 500px;
   margin-bottom: 50px;
-  h1{
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  h1 {
     color: white;
     text-align: center;
   }
 }
 
-#we{
+#we {
+  display: flex;
   margin-bottom: 250px;
+  align-items: center;
+  h1 {
+    position: relative;
+    left: 15%;
+  }
+  img {
+    position: relative;
+    height: 50%;
+    width: 45%;
+    left: 30%;
+  }
+}
+
+#are {
+  display: flex;
+  margin-bottom: 250px;
+  align-items: center;
+  h1 {
+    position: relative;
+    left: 25%;
+  }
+
+  img {
+    position: relative;
+    height: 50%;
+    width: 45%;
+    left: 15%;
+  }
 }
 
 #staff-title {
@@ -33,11 +66,16 @@
   text-align: center;
 }
 
-#footer{
-    margin-top: 250px;
-    margin-bottom: 50px;
-    text-align: center;
-    p {
-        color: white;
-    }
+#footer {
+  margin-top: 250px;
+  margin-bottom: 50px;
+  text-align: center;
+  p {
+    color: white;
+  }
+}
+
+#remainder {
+  z-index: 5;
+  position: relative;
 }
