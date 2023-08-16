@@ -25,10 +25,9 @@ const Welcome = (props) => {
     }
   };
 
-  useEffect(() =>{
-    document.addEventListener("scroll", move);
-
-  }, [])
+  // useEffect(() =>{
+  //   document.addEventListener("scroll", move);
+  // }, [])
 
   return (
     <div id="welcome" ref={props.reference}>
