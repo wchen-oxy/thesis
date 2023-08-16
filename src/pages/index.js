@@ -7,9 +7,7 @@ import Staff from "../templates/staff";
 import img from "../images/staff-dir";
 import "../styles/index.scss";
 import Footer from "../templates/footer";
-import bcp from "../images/resources/group.jpg";
-import yell from "../images/resources/yell-crop.png";
-import drum from "../images/resources/drum.png";
+import Intro from "../templates/intro";
 
 const design = [
   {
@@ -138,22 +136,7 @@ const IndexPage = () => {
       <Welcome reference={welcomeRef} />
       <div></div>
       <div id="remainder">
-        <div id="splash">
-          <div id="we">
-            <h1>We</h1>
-            <img src={drum} />
-          </div>
-          <div id="are">
-            <img src={yell} />
-            <h1>Are</h1>
-          </div>
-          <h1>The Premier World Class Division of the Bay Area</h1>
-        </div>
-
-        <div id="bcp">
-          <img src={bcp} />
-          {/* <h4>Music to be played</h4> */}
-        </div>
+        <Intro />
 
         <Awards />
         <Schedule reference={scheduleRef} />

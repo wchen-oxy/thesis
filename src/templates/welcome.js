@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import cover from "../images/resources/newbackground-low.jpg";
-import body from "../images/resources/body.png";
+import body from "../images/resources/body-min.png";
 import arm from "../images/resources/arm.png";
 import Title from "./title";
  
