@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react";
-import body from "../images/resources/body-min.png";
-import arm from "../images/resources/arm.png";
+import body from "../images/resources/body-min-c.png";
+import arm from "../images/resources/arm-c.png";
 import Title from "./title";
- 
+
 const Welcome = (props) => {
   const armRef = useRef(null);
   const bodyRef = useRef(null);
@@ -30,21 +30,23 @@ const Welcome = (props) => {
   // }, [])
 
   return (
-    <div id="welcome" ref={props.reference}>
-      <div id="welcome-text">
-        {/* <h1>Thesis Percussion</h1> */}
-        <Title text={"Thesis"}/>
-        <Title text={"Percussion"}/>
-        <p>Statement To Be Made</p>
-      </div>
-      <div id="background-container">
-        {/* <img id="background" alt="cover goes here" src={(cover)} /> */}
-      </div>
-      <div className="foo loading" id="arm-container" ref={armRef}>
-        <img className="welcome-image" id="arm" src={(arm)} />
-      </div>
-      <div className="loading" id="body-container" ref={bodyRef}>
-        <img className="welcome-image" id="body" src={(body)} />
+    <div>
+      <div id="welcome" ref={props.reference}>
+        <div id="welcome-text">
+          {/* <h1>Thesis Percussion</h1> */}
+          <Title text={"Thesis"} />
+          <Title text={"Percussion"} />
+          <p>Statement To Be Made</p>
+        </div>
+        <div id="background-container"></div>
+        <div id="welcome-figure">
+          <div className="foo loading" id="arm-container" ref={armRef}>
+            <img className="welcome-image" id="arm" src={arm} />
+          </div>
+          <div className="loading" id="body-container" ref={bodyRef}>
+            <img className="welcome-image" id="body" src={body} />
+          </div>
+        </div>
       </div>
     </div>
   );
