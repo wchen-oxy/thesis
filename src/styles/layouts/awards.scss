@@ -1,28 +1,43 @@
-#awards{
-    @include flex-display-column;
-    height: 1024px;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-    justify-content: center;
-    h1{
-        color: white;
-        margin: 48px 32px;
-        text-align: center;
-        font-weight: 800;
-        font-size: 64px;
-    }
-    h3{
-        font-size: 20px;
-        font-weight: 200;
-    }
-    h4{
-        font-size: 32px;
-        font-weight: 500;
-    }
+#awards {
+  @include flex-display-column;
+  height: 1024px;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  justify-content: center;
+  h1 {
+    color: white;
+
+    text-align: center;
+    font-weight: 800;
+    font-size: 64px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  h4 {
+    font-size: 32px;
+    font-weight: 500;
+  }
 }
 
 #awards-list {
-    @include flex-display-row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  @include flex-display-row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 799px) {
+  #awards {
+    h1 {
+      margin: 0;
+    }
+  }
+}
+@media only screen and (min-width: 800px) {
+  #awards {
+    h1 {
+      margin: 48px 32px;
+    }
+  }
 }
